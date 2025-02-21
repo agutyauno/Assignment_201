@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\123000784_BuiHoaiNam\\Assignment_OOP201_TaoLopVaDoiTuong\\Assignment_201\\Assignment_201.csproj": {}
+    "z:\\123000784_BuiHoaiNam\\Assignment_OOP201_TaoLopVaDoiTuong\\Assignment_201\\Assignment_201.csproj": {}
   },
   "projects": {
-    "Z:\\123000784_BuiHoaiNam\\Assignment_OOP201_TaoLopVaDoiTuong\\Assignment_201\\Assignment_201.csproj": {
+    "z:\\123000784_BuiHoaiNam\\Assignment_OOP201_TaoLopVaDoiTuong\\Assignment_201\\Assignment_201.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\123000784_BuiHoaiNam\\Assignment_OOP201_TaoLopVaDoiTuong\\Assignment_201\\Assignment_201.csproj",
+        "projectUniqueName": "z:\\123000784_BuiHoaiNam\\Assignment_OOP201_TaoLopVaDoiTuong\\Assignment_201\\Assignment_201.csproj",
         "projectName": "Assignment_201",
-        "projectPath": "Z:\\123000784_BuiHoaiNam\\Assignment_OOP201_TaoLopVaDoiTuong\\Assignment_201\\Assignment_201.csproj",
+        "projectPath": "z:\\123000784_BuiHoaiNam\\Assignment_OOP201_TaoLopVaDoiTuong\\Assignment_201\\Assignment_201.csproj",
         "packagesPath": "C:\\Users\\LHUser\\.nuget\\packages\\",
-        "outputPath": "Z:\\123000784_BuiHoaiNam\\Assignment_OOP201_TaoLopVaDoiTuong\\Assignment_201\\obj\\",
+        "outputPath": "z:\\123000784_BuiHoaiNam\\Assignment_OOP201_TaoLopVaDoiTuong\\Assignment_201\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

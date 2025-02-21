@@ -1,0 +1,15 @@
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\bin\Debug\net6.0\Assignment_201.exe
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\bin\Debug\net6.0\Assignment_201.deps.json
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\bin\Debug\net6.0\Assignment_201.runtimeconfig.json
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\bin\Debug\net6.0\Assignment_201.dll
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\bin\Debug\net6.0\Assignment_201.pdb
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.csproj.AssemblyReference.cache
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.GeneratedMSBuildEditorConfig.editorconfig
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.AssemblyInfoInputs.cache
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.AssemblyInfo.cs
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.csproj.CoreCompileInputs.cache
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.dll
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\refint\Assignment_201.dll
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.pdb
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.genruntimeconfig.cache
+z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\ref\Assignment_201.dll
