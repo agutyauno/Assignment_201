@@ -1,11 +1,8 @@
-public class StackF 
+public class StackF
 {
     #region fields
     private int maxSize, top;
     private int[] stackArray;
-    #endregion    
-
-    #region properties
     #endregion    
 
     #region constructors

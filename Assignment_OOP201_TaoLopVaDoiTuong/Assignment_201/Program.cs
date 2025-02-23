@@ -13,7 +13,7 @@ internal class Program
             Console.WriteLine("4. Quan ly nhan su");
             Console.WriteLine("0. Exit");
             Console.WriteLine("===================================");
-            Console.WriteLine("Moi chon chuc nang: ");
+            Console.Write("Moi chon chuong trinh: ");
             input = Console.ReadLine();
             if (int.TryParse(input, out int choice))
             {
@@ -53,7 +53,7 @@ internal class Program
             Console.WriteLine("4. hien thi danh sach diem");
             Console.WriteLine("0. Exit");
             Console.WriteLine("===================================");
-            Console.WriteLine("Moi chon chuc nang: ");
+            Console.Write("Moi chon chuc nang: ");
             string? input = Console.ReadLine();
             List<Point2D> listPoint = new();
             if (int.TryParse(input, out int choice))
@@ -200,21 +200,43 @@ internal class Program
         }
     }
 
+    #region Xây dựng chương trình quản lý nhân sự, bao gồm phân tích bài toán theo hướng đối tượng
+
+    /* 
+    I) Phân tích yêu cầu quản lý nhân sự
+        Yêu cầu ứng dụng quản lý nhân sự của một công ty gồm các chức năng sau: 
+        1. Nhập thông tin nhân viên 
+        2. Phân phòng ban cho nhân viên 
+        3. tìm kiếm nhân viên theo tên 
+        4. Tìm kiếm nhân viên theo maNhanVien
+        5. cập nhật nhân viên nghỉ làm
+        6. Tính lương cho nhân viên
+        7. Chuyển phòng ban làm việc
+        8. In danh sách nhân viên
+
+    II) phân tích hướng đối tượng
+        Đối tượng Nhân viên (Employee):
+            Thuộc tính: Mã nhân viên, Tên, Phòng ban, Lương cơ bản, Hệ số lương, Lương thưởng, Trạng thái (đang làm/nghỉ việc).
+            Chức năng: Lưu trữ thông tin cá nhân và trạng thái làm việc.
+        -Phương thức:
+            +Constructor
+            +Getter và setter cho từng thuộc tính
+            +Tinh tong luong
+
+        Đối tượng Quản lý nhân viên (EmployeeManager):
+            Thuộc tính: Danh sách nhân viên.
+            Chức năng: Quản lý toàn bộ nghiệp vụ (thêm, sửa, xóa, tìm kiếm, tính lương, chuyển phòng ban, in danh sách).
+        -Phương thức:
+            +Thêm nhân viên
+            +Thay đổi thông tin nhân viên
+            +Xóa thông tin nhân viên
+            +Tìm kiếm theo tên hoặc mã nhân viên
+            +In danh sách nhân viên
+    */
     static void EmployeeManageProgram()
     {
-        Console.WriteLine("===================================");
-        Console.WriteLine("1. Point2D");
-        Console.WriteLine("2. StackF");
-        Console.WriteLine("3. Triangle");
-        Console.WriteLine("4. Quan ly nhan su");
-        Console.WriteLine("0. Exit");
-        Console.WriteLine("===================================");
-        Console.WriteLine("Moi chon chuc nang: ");
-        string? input = Console.ReadLine();
-        if (int.TryParse(input, out int choice))
-        {
-
-        }
+        
     }
+    #endregion
 
 }
