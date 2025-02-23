@@ -13,3 +13,18 @@ z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\De
 z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.pdb
 z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.genruntimeconfig.cache
 z:\123000784_BuiHoaiNam\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\ref\Assignment_201.dll
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\bin\Debug\net6.0\Assignment_201.exe
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\bin\Debug\net6.0\Assignment_201.deps.json
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\bin\Debug\net6.0\Assignment_201.runtimeconfig.json
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\bin\Debug\net6.0\Assignment_201.dll
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\bin\Debug\net6.0\Assignment_201.pdb
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.GeneratedMSBuildEditorConfig.editorconfig
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.AssemblyInfoInputs.cache
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.AssemblyInfo.cs
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.csproj.CoreCompileInputs.cache
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.sourcelink.json
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.dll
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\refint\Assignment_201.dll
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.pdb
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\Assignment_201.genruntimeconfig.cache
+d:\github repositories\Assignment_201\Assignment_OOP201_TaoLopVaDoiTuong\Assignment_201\obj\Debug\net6.0\ref\Assignment_201.dll

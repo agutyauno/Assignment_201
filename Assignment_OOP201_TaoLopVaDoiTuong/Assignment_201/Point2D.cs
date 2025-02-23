@@ -24,8 +24,8 @@ public class Point2D
 
     public Point2D(Point2D p)
     {
-        X = p.X;
-        Y = p.Y;
+        x = p.X;
+        y = p.Y;
     }
     #endregion
 
@@ -48,18 +48,33 @@ public class Point2D
     #region move methods
     public void Move(Point2D p)
     {
-        X += p.X;
-        Y += p.Y;
+        x += p.X;
+        x += p.Y;
     }
 
     public void Move(float dx, float dy)
     {
-        X += dx;
-        Y += dy;
+        x += dx;
+        y += dy;
     }
     #endregion
 
-    
+    public void InvertCoordinate()
+    {
+        x = -x;
+        y = -y;
+    }
+
+    public void GetInvertCoorinate()
+    {
+        Console.WriteLine($"({-x}, {-y})");
+    }
+
+    public void Print()
+    {
+        Console.WriteLine($"({x}, {y})");
+    }
+
     #endregion
 
     #region operator overloading
