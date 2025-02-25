@@ -49,7 +49,7 @@ public class Point2D
     public void Move(Point2D p)
     {
         x += p.X;
-        x += p.Y;
+        y += p.Y;
     }
 
     public void Move(float dx, float dy)
