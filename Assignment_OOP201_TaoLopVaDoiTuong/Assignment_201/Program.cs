@@ -63,10 +63,8 @@ internal class Program
                     case 1: //tao diem
                         try
                         {
-                            Console.WriteLine("Nhap toa do x:");
-                            float x = float.Parse(Console.ReadLine());
-                            Console.WriteLine("Nhap toa do y:");
-                            float y = float.Parse(Console.ReadLine());
+                            float x = InputCheck.Float("Nhap toa do x:");
+                            float y = InputCheck.Float("Nhap toa do y:");
                             Point2D p = new(x, y);
                             listPoint.Add(p);
                             Console.WriteLine("diem da duoc tao");
@@ -79,12 +77,9 @@ internal class Program
                     case 2: //di chuyen diem
                         try
                         {
-                            Console.WriteLine("Nhap diem muon di chuyen:");
-                            int n = int.Parse(Console.ReadLine());
-                            Console.WriteLine("Nhap khoang cach di chuyen x:");
-                            float x = float.Parse(Console.ReadLine());
-                            Console.WriteLine("Nhap khoang cach di chuyen y:");
-                            float y = float.Parse(Console.ReadLine());
+                            int n = InputCheck.Int("Nhap diem muon di chuyen:");
+                            float x = InputCheck.Float("Nhap khoang cach di chuyen x:");
+                            float y = InputCheck.Float("Nhap khoang cach di chuyen y:");
                             listPoint[n].Move(x, y);
                             Console.WriteLine("Diem da duoc di chuyen");
                         }
@@ -96,8 +91,7 @@ internal class Program
                     case 3: //lay toa do doi xung
                         try
                         {
-                            Console.WriteLine("Nhap diem muon lay toa do doi xung:");
-                            int n = int.Parse(Console.ReadLine());
+                            int n = InputCheck.Int("Nhap diem muon lay toa do doi xung:");
                             listPoint[n].GetInvertCoorinate();
                         }
                         catch (Exception error)
@@ -108,8 +102,7 @@ internal class Program
                     case 4: //dao vi tri diem
                         try
                         {
-                            Console.WriteLine("Nhap diem muon dao vi tri:");
-                            int n = int.Parse(Console.ReadLine());
+                            int n = InputCheck.Int("Nhap diem muon dao vi tri:");
                             listPoint[n].InvertCoordinate();
                             Console.WriteLine("Diem da duoc di chuyen");
                         }
@@ -182,12 +175,9 @@ internal class Program
         try
         {
             double a, b, c;
-            Console.WriteLine("nhap chieu dai canh A: ");
-            a = double.Parse(Console.ReadLine());
-            Console.WriteLine("nhap chieu dai canh B: ");
-            b = double.Parse(Console.ReadLine());
-            Console.WriteLine("nhap chieu dai canh C: ");
-            c = double.Parse(Console.ReadLine());
+            a = InputCheck.Double("nhap chieu dai canh A: ");
+            b = InputCheck.Double("nhap chieu dai canh B: ");
+            c = InputCheck.Double("nhap chieu dai canh C: ");
 
             Triangle triangle = new(a, b, c);
             Console.WriteLine($"Loai tam giac: {triangle.GetTriangleType()}");
@@ -221,7 +211,8 @@ internal class Program
         -Phương thức:
             +Constructor
             +Getter và setter cho từng thuộc tính
-            +Tinh tong luong
+            +Tính tổng lương
+            +In thông tin
 
         Đối tượng Quản lý nhân viên (EmployeeManager):
             Thuộc tính: Danh sách nhân viên.
@@ -235,7 +226,71 @@ internal class Program
     */
     static void EmployeeManageProgram()
     {
-        
+        string? input;
+        EmployeeManager employeeManager = new();
+        while (true)
+        {
+            Console.WriteLine("Chuong trinh quan ly nhan su");
+            Console.WriteLine("===================================");
+            Console.WriteLine("1. them nhan vien");
+            Console.WriteLine("2. in danh sach nhan vien");
+            Console.WriteLine("3. tim kiem theo ten");
+            Console.WriteLine("4. tim kiem theo ma nhan vien");
+            Console.WriteLine("5. thay doi thong tin nhan vien");
+            Console.WriteLine("6. xoa nhan vien");
+            Console.WriteLine("0. Exit");
+            Console.WriteLine("===================================");
+            Console.Write("Moi chon chuc nang: ");
+            input = Console.ReadLine();
+            if (int.TryParse(input, out int choice))
+            {
+                switch (choice)
+                {
+                    case 1: //them nhan vien
+                        employeeManager.AddEmployee();
+                        break;
+                    case 2: //in danh sach nhan vien
+                        employeeManager.PrintListEmployee();
+                        break;
+                    case 3: //tim kiem theo ten
+                        input = InputCheck.String("nhap ten nhan vien muon kiem: ");
+                        List<Employee> emplist = employeeManager.SearchByName(input);
+                        if (emplist.Count <= 0)
+                        {
+                            Console.WriteLine("khong tim thay nhan vien!");
+                        }
+                        else
+                            foreach (var e in emplist)
+                            {
+                                employeeManager.PrintEmployee(e);
+                            }
+                        break;
+                    case 4: //tim kiem theo ma nhan vien
+                        input = InputCheck.String("nhap ma nhan vien muon kiem: ");
+                        Employee? emp = employeeManager.SearchByID(input);
+                        if (emp == null)
+                        {
+                            Console.WriteLine("khong tim thay nhan vien");
+                        }
+                        else
+                        {
+                            employeeManager.PrintEmployee(emp);
+                        }
+                        break;
+                    case 5: //thay doi thong tin nhan vien
+                        employeeManager.UpdateEmployee();
+                        break;
+                    case 6: //xoa nhan vien
+                        employeeManager.RemoveEmployee();
+                        break;
+                    case 0:
+                        return;
+                    default:
+                        Console.WriteLine("Nhap khong hop le!");
+                        break;
+                }
+            }
+        }
     }
     #endregion
 

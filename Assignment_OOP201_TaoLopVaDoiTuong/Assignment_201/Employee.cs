@@ -28,6 +28,17 @@ public class Employee
         this.dangLamViec = dangLamViec;
     }
 
+    public Employee(string maNhanVien, string tenNhanVien, string phongBan, decimal luongCoBan, bool dangLamViec)
+    {
+        this.maNhanVien = maNhanVien;
+        this.tenNhanVien = tenNhanVien;
+        this.phongBan = phongBan;
+        this.luongCoBan = luongCoBan;
+        heSoLuong = 1;
+        luongThuong = 0;
+        this.dangLamViec = dangLamViec;
+    }
+
     public Employee()
     {
         maNhanVien = string.Empty;
@@ -51,8 +62,20 @@ public class Employee
     }
     #endregion
 
-    public decimal CaculateSalary()
+#region methods
+    decimal CaculateSalary()
     {
         return luongCoBan * heSoLuong + luongThuong;
     }
+
+    string IsWorking()
+    {
+        return dangLamViec? "dang lam viec" : "dang nghi";
+    }
+    
+    public void PrintInfo()
+    {
+        Console.WriteLine($"{maNhanVien,-15}|{tenNhanVien,-30}|{phongBan,-30}|{luongCoBan,-50}|{heSoLuong,-5}|{luongThuong,-50}|{IsWorking,-10}|{CaculateSalary,-50}");
+    }
+#endregion
 }
