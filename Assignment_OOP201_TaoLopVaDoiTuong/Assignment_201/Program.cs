@@ -61,55 +61,29 @@ internal class Program
                 switch (choice)
                 {
                     case 1: //tao diem
-                        try
-                        {
-                            float x = InputCheck.Float("Nhap toa do x:");
-                            float y = InputCheck.Float("Nhap toa do y:");
-                            Point2D p = new(x, y);
-                            listPoint.Add(p);
-                            Console.WriteLine("diem da duoc tao");
-                        }
-                        catch (Exception error)
-                        {
-                            Console.WriteLine($"Nhap sai dinh dang! \nloi: {error.Message}");
-                        }
+                        float x = InputCheck.Float("Nhap toa do x:");
+                        float y = InputCheck.Float("Nhap toa do y:");
+
+                        Point2D p = new(x, y);
+                        listPoint.Add(p);
+                        Console.WriteLine("diem da duoc tao");
                         break;
                     case 2: //di chuyen diem
-                        try
-                        {
-                            int n = InputCheck.Int("Nhap diem muon di chuyen:");
-                            float x = InputCheck.Float("Nhap khoang cach di chuyen x:");
-                            float y = InputCheck.Float("Nhap khoang cach di chuyen y:");
-                            listPoint[n].Move(x, y);
-                            Console.WriteLine("Diem da duoc di chuyen");
-                        }
-                        catch (Exception error)
-                        {
-                            Console.WriteLine($"Nhap sai dinh dang! \nloi: {error.Message}");
-                        }
+                        int n = InputCheck.Int("Nhap diem muon di chuyen:");
+                        x = InputCheck.Float("Nhap khoang cach di chuyen x:");
+                        y = InputCheck.Float("Nhap khoang cach di chuyen y:");
+
+                        listPoint[n].Move(x, y);
+                        Console.WriteLine("Diem da duoc di chuyen");
                         break;
                     case 3: //lay toa do doi xung
-                        try
-                        {
-                            int n = InputCheck.Int("Nhap diem muon lay toa do doi xung:");
-                            listPoint[n].GetInvertCoorinate();
-                        }
-                        catch (Exception error)
-                        {
-                            Console.WriteLine($"Nhap sai dinh dang! \nloi: {error.Message}");
-                        }
+                        n = InputCheck.Int("Nhap diem muon lay toa do doi xung:");
+                        listPoint[n].GetInvertCoorinate();
                         break;
                     case 4: //dao vi tri diem
-                        try
-                        {
-                            int n = InputCheck.Int("Nhap diem muon dao vi tri:");
-                            listPoint[n].InvertCoordinate();
-                            Console.WriteLine("Diem da duoc di chuyen");
-                        }
-                        catch (Exception error)
-                        {
-                            Console.WriteLine($"Nhap sai dinh dang! \nloi: {error.Message}");
-                        }
+                        n = InputCheck.Int("Nhap diem muon dao vi tri:");
+                        listPoint[n].InvertCoordinate();
+                        Console.WriteLine("Diem da duoc di chuyen");
                         break;
                     case 5: //hien thi
                         for (int i = 0; i < listPoint.Count; i++)
@@ -130,14 +104,8 @@ internal class Program
     static void StackProgram()
     {
         Console.WriteLine("Chuyen doi he co so");
-        Console.WriteLine("nhap 1 so co so 10: ");
-        string? input = Console.ReadLine();
-        int number;
-        if (!int.TryParse(input, out number))
-        {
-            Console.WriteLine("Nhap khong hop le!");
-            return;
-        }
+        int number = InputCheck.Int("nhap 1 so co so 10: ");
+
         Console.WriteLine($"He so 2: {ConvertToBase(number, 2)}");
         Console.WriteLine($"He so 8: {ConvertToBase(number, 8)}");
         Console.WriteLine($"He so 16: {ConvertToBase(number, 16)}");
@@ -172,22 +140,15 @@ internal class Program
 
     static void TriangleProgram()
     {
-        try
-        {
-            double a, b, c;
-            a = InputCheck.Double("nhap chieu dai canh A: ");
-            b = InputCheck.Double("nhap chieu dai canh B: ");
-            c = InputCheck.Double("nhap chieu dai canh C: ");
+        double a, b, c;
+        a = InputCheck.Double("nhap chieu dai canh A: ");
+        b = InputCheck.Double("nhap chieu dai canh B: ");
+        c = InputCheck.Double("nhap chieu dai canh C: ");
 
-            Triangle triangle = new(a, b, c);
-            Console.WriteLine($"Loai tam giac: {triangle.GetTriangleType()}");
-            Console.WriteLine($"Dien tich tam giac la: {triangle.DienTich()}");
-            Console.WriteLine($"Chu vi tam giac la: {triangle.ChuVi()}");
-        }
-        catch (Exception error)
-        {
-            Console.WriteLine($"Nhap sai dinh dang! \nloi: {error.Message}");
-        }
+        Triangle triangle = new(a, b, c);
+        Console.WriteLine($"Loai tam giac: {triangle.GetTriangleType()}");
+        Console.WriteLine($"Dien tich tam giac la: {triangle.DienTich()}");
+        Console.WriteLine($"Chu vi tam giac la: {triangle.ChuVi()}");
     }
 
     #region Xây dựng chương trình quản lý nhân sự, bao gồm phân tích bài toán theo hướng đối tượng
@@ -255,19 +216,23 @@ internal class Program
                     case 3: //tim kiem theo ten
                         input = InputCheck.String("nhap ten nhan vien muon kiem: ");
                         List<Employee> emplist = employeeManager.SearchByName(input);
+
                         if (emplist.Count <= 0)
                         {
                             Console.WriteLine("khong tim thay nhan vien!");
                         }
                         else
+                        {
                             foreach (var e in emplist)
                             {
                                 employeeManager.PrintEmployee(e);
                             }
+                        }
                         break;
                     case 4: //tim kiem theo ma nhan vien
                         input = InputCheck.String("nhap ma nhan vien muon kiem: ");
                         Employee? emp = employeeManager.SearchByID(input);
+                        
                         if (emp == null)
                         {
                             Console.WriteLine("khong tim thay nhan vien");
